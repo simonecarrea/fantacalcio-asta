@@ -1,4 +1,4 @@
-const CACHE = "fantacalcio-asta-v1";
+const CACHE = "fantacalcio-asta-v2-20260902";
 const ASSETS = ["./", "./index.html", "./manifest.json"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
